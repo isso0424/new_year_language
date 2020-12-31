@@ -12,7 +12,7 @@ func translateToJapanese(raw string) string {
 	parsed := ""
 	for index, char := range result {
 		tmp += string(char)
-		if ((index + 1) % 36 == 0) {
+		if ((index + 1) % 24 == 0) {
 			tmpInt, _ := strconv.ParseInt(tmp, 2, 64)
 			parsed += string(tmpInt)
 			tmp = ""
